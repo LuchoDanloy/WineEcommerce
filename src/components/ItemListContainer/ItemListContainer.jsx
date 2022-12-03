@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList.jsx";
 
 //LLAMA A LA BASE DE DATOS Y SE LA ENVIA AL ITEMLIST
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
     
