@@ -4,10 +4,10 @@ import Item from "../Item/Item";
 
 //key: es un identificador unico por cada objeto. Si o si
 
-const ItemList = ({productList}) => {
+const ItemList = ({productsList}) => {
     return (
         <>
-           {productList.map(product => <Item key={product.id} producto={product}/>)}
+           {productsList.map(product => <Item key={product.id} producto={product}/>)}
         </>
     );
 }

@@ -3,7 +3,7 @@ const ItemDetail = ({producto}) => {
     return (
         <div className="row g-0">
             <div className="col-md-4">
-                <img src={`./img/${producto.img}`} alt="" className="img-fluid rounded-start" />
+                <img src={`../img/${producto.img}`} alt="" className="img-fluid rounded-start" />
             </div>
             <div className="col-md-8">
                 <h5 className="card-title">{producto.nombre}</h5>
