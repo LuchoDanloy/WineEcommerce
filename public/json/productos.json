@@ -2,122 +2,122 @@
     {
         "id": 1,
         "idCategoria": 1,
-        "nombre": "Notebook",
-        "marca": "Lenovo",
-        "modelo": "Y510P",
-        "precio": 60000,
+        "nombre": "Catene Zapata",
+        "descripcion": "catena-zapata-malbec-argentino-750cc",
+        "codigo": "Y510P",
+        "precio": 5000,
         "stock": 30,
-        "img": "notebook-lenovo.jpg"
+        "img": "catena-zapata-malbec-argentino-750cc.jpg"
     },
     {
         "id": 2,
-        "idCategoria": 2,
-        "nombre": "Celular",
-        "marca": "Xiomi",
-        "modelo": "Mi-9",
-        "precio": 35000,
+        "idCategoria": 1,
+        "nombre": "Cheval Des Andes",
+        "descripcion": "cheval-des-andes-2018-750cc",
+        "codigo": "Ch-9",
+        "precio": 4000,
         "stock": 20,
-        "img": "xiaomi-mi-9.jpg"
+        "img": "cheval-des-andes-2018-750cc.jpg"
     },
     {
         "id": 3,
         "idCategoria": 3,
-        "nombre": "Smart Tv",
-        "marca": "Novatech",
-        "modelo": "50D1U",
-        "precio": 57000,
-        "stock": 15,
-        "img": "smart-tv-novatech.jpg"
+        "nombre": "Heineken",
+        "descripcion": "cerveza-heineken-rubia-lata-473cc",
+        "codigo": "50D1U",
+        "precio": 250,
+        "stock": 50,
+        "img": "cerveza-heineken-rubia-lata-473cc.jpg"
     },
     {
         "id": 4,
-        "idCategoria": 4,
-        "nombre": "Camara ",
-        "marca": "iQual",
-        "modelo": "C40",
+        "idCategoria": 1,
+        "nombre": "Nicolas CZ ",
+        "descripcion": "nicolas-catena-zapata-750cc",
+        "codigo": "C40",
         "precio": 8000,
         "stock": 30,
-        "img": "camara-iqual.jpg"
+        "img": "nicolas-catena-zapata-750cc.jpg"
     },
     {
         "id": 5,
         "idCategoria": 4,
-        "nombre": "Mouse",
-        "marca": "Logitech",
-        "modelo": "G502",
+        "nombre": "Amargo Obrero",
+        "descripcion": "amargo-obrero-950cc",
+        "codigo": "G502",
         "precio": 1400,
-        "stock": 7,
-        "img": "mouse-logitech.jpg"
+        "stock": 10,
+        "img": "amargo-obrero-950cc.jpg"
     },
     {
         "id": 6,
         "idCategoria": 4,
-        "nombre": "Auriculares",
-        "marca": "Motorola",
-        "modelo": "Pulse",
+        "nombre": "Aperol",
+        "descripcion": "aperitivo-aperol-750cc",
+        "codigo": "ape750",
         "precio": 4000,
         "stock": 20,
-        "img": "motorola-pulse.jpg"
+        "img": "aperitivo-aperol-750cc.jpg"
     },
     {
         "id": 7,
         "idCategoria": 2,
-        "nombre": "Celular",
-        "marca": "Apple",
-        "modelo": "Iphone X Silver",
-        "precio": 250000,
+        "nombre": "Salentein",
+        "descripcion": "espumante-salentein-brut-nature-750cc",
+        "codigo": "Sal8525",
+        "precio": 6000,
         "stock": 10,
-        "img": "iphone-x.jpg"
+        "img": "espumante-salentein-brut-nature-750cc.jpg"
     },
     {
         "id": 8,
         "idCategoria": 3,
-        "nombre": "Apple TV",
-        "marca": "Apple ",
-        "modelo": "32 Gb",
-        "precio": 45000,
+        "nombre": "Imperial",
+        "descripcion": "cerveza-imperial-rubia-lata-473-cc ",
+        "codigo": "IMP450",
+        "precio": 200,
         "stock": 30,
-        "img": "apple-tv.jpg"
+        "img": "cerveza-imperial-rubia-lata-473-cc.jpg"
     },
     {
         "id": 9,
         "idCategoria": 4,
-        "nombre": "Parlante",
-        "marca": "Kalley",
-        "modelo": "SPK200",
-        "precio": 34000,
+        "nombre": "Gancia",
+        "descripcion": "gancia-950-cc",
+        "codigo": "SPK200",
+        "precio": 1200,
         "stock": 21,
-        "img": "parlante-kalley.png"
+        "img": "gancia-950-cc.jpg"
     },
     {
         "id": 10,
         "idCategoria": 1,
-        "nombre": "Mac Air",
-        "marca": "Apple",
-        "modelo": "M1 2020",
+        "nombre": "Saint Falicien",
+        "descripcion": "saint-felicien-tributo-gustavo-klimt-3x750",
+        "codigo": "M1 2020",
         "precio": 13000,
         "stock": 25,
-        "img": "mac-air.jpg"
+        "img": "saint-felicien-tributo-gustavo-klimt-3x750.jpg"
     },
     {
         "id": 11,
         "idCategoria": 2,
-        "nombre": "Celular",
-        "marca": "Samsung",
-        "modelo": "S20",
-        "precio": 85000,
+        "nombre": "Dilema",
+        "descripcion": "espumante-dilema-ros-dce-natural-750cc",
+        "codigo": "S20",
+        "precio": 3000,
         "stock": 30,
-        "img": "samsung-s20.jpg"
+        "img": "espumante-dilema-ros-dce-natural-750cc.jpg"
     },
     {
         "id": 12,
         "idCategoria": 1,
-        "nombre": "Notebook",
-        "marca": "HP",
-        "modelo": "Pavilion 15",
-        "precio": 120000,
+        "nombre": "Alae",
+        "descripcion": "alae-malbec-caja-de-madera-x3bot-750cc",
+        "codigo": "AL250",
+        "precio": 12000,
         "stock": 20,
-        "img": "hp-pavilion.jpg"
+        "img": "alae-malbec-caja-de-madera-x3bot-750cc.jpg"
     }
 
 ]

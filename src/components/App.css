@@ -1,4 +1,34 @@
 .cardProducto{
     width: 18rem;
     margin: 5px;
+    text-align: center;
 }
+
+.cardBody {
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.cardProductos {
+    margin: 4px;
+    align-items:center;
+    justify-content: center;
+}
+
+.cartWidget {
+    position: relative;
+    right: 3%;
+    color:white;
+}
+
+.logo{
+    width: auto;
+    max-width: 15rem;
+    margin-right: 20px;
+}
+
+.cantCarrito {
+    position: relative;
+    left: 15%;
+}
+

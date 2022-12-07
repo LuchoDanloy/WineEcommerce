@@ -8,11 +8,28 @@ const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
     const {category} = useParams()
+    let idCategory 
 
     useEffect(() => {
             if(category) {
+
+                switch (category) {
+                    case "vinos":
+                        idCategory = 1
+                        break
+                    case "espumantes":
+                        idCategory = 2
+                        break
+                    case "cervezas":
+                        idCategory = 3
+                        break
+                    case "aperitivos":
+                        idCategory = 4
+                        break
+                }
+
                 consultarBDD('../json/productos.json').then(products => {
-                    const productsList= products.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === parseInt(category))
+                    const productsList= products.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === idCategory)
                     const cardProductos = ItemList({productsList})
                     setProductos(cardProductos)
                 })
@@ -33,7 +50,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <div className="row" >
+            <div className="row cardProductos" >
                 {productos}
             </div>
             
