@@ -1,8 +1,11 @@
-
+import { Link } from "react-router-dom";
 
 const Cart = () => {
     return (
-        <h1>En Construcción</h1>
+        <>
+            <h1>productos en el carro</h1>
+            <button type="submit" className="btn btn-primary"><Link to={'/checkout'}>Finalizar Compra</Link></button>
+        </>
     );
 }
 

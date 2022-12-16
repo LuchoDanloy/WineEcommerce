@@ -8,6 +8,7 @@ import ItemListContainer from './ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Footer from './Footer/Footer';
 import Cart from './Cart/Cart'
+import Checkout from "./Checkout/Checkout";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/producto/:id' element={<ItemDetailContainer/>} />
           <Route path='/category/:category' element={<ItemListContainer/>} />
           <Route path='/cart' element={<Cart/>} />
+          <Route path='/checkout' element={<Checkout/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>

@@ -1,5 +1,11 @@
 import ItemCuont from "../ItemCount/ItemCount";
 const ItemDetail = ({producto}) => {
+
+    //evento que pide como parametro un contador(cantidad de productos que esta comprando)
+    const onAdd = (contador) =>{
+        console.log(contador)
+    }
+
     return (
         <div className="row g-0 ">
             <div className="col-md-4">
@@ -12,7 +18,7 @@ const ItemDetail = ({producto}) => {
                     <p className="card-text">{producto.descripcion}</p>
                     <p className="card-text">Precio: $ {new Intl.NumberFormat('de-DE').format(producto.precio)} </p>
                     <p className="card-text">Stock: {producto.stock}</p>
-                    <ItemCuont stock={producto.stock}  />
+                    <ItemCuont inicial={1} stock={producto.stock} onAdd={onAdd} />
                     <button className="btn btn-dark my-2">Finalizar Compra</button>
                 </div>
             </div>
