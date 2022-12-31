@@ -1,8 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import { createOrdenCompra, getOrdenCompra } from "../../assets/firebase";
+import { useCarritoContext } from "../../context/CarritoContext";
+import Item from "../Item/Item";
 const Checkout = () => {
-
+    const {totalPrice} = useCarritoContext()
     const datosFormulario = React.useRef() //REFERENCIA
     let navigate = useNavigate()//ME DICE EN DONDE ESTOY EN ESTE MOMENTO
 
@@ -11,8 +13,15 @@ const Checkout = () => {
         e.preventDefault() //COMPORTAMIENTO POR DEFECTO
         const datoForm = new FormData(datosFormulario.current)
         const cliente = Object.fromEntries(datoForm)//TRANSFORMA CADA UNO DE LOS VALORES Y LOS RETORNA EN UN SOLO OBJETO CON CLAVE/VALOR
-        e.target.reset() //limpiar el formulario
-        navigate("/")
+        
+        createOrdenCompra(cliente,totalPrice(), new Date().toISOString().slice(0,10)).then(ordenCompra =>{
+            getOrdenCompra(ordenCompra.id).then(Item => {
+                e.target.reset() //limpiar el formulario
+                navigate("/")
+            })
+        })
+        
+
     }
 
     return (

@@ -35,3 +35,15 @@
 .itemDetail {
     margin-top: 20px;
 }
+
+.darkMode{
+    background-color: black;
+    color: white;
+}
+
+.cardBodyDark{
+    background-color: rgb(44, 44, 44);
+    margin-bottom: 3px;
+    text-align: center;
+}
+

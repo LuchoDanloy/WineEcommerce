@@ -1,15 +1,19 @@
 import ItemCuont from "../ItemCount/ItemCount";
+
+import { useCarritoContext } from "../../context/CarritoContext";
 const ItemDetail = ({producto}) => {
 
+    const {addItem}= useCarritoContext()
+
     //evento que pide como parametro un contador(cantidad de productos que esta comprando)
-    const onAdd = (contador) =>{
-        console.log(contador)
+    const onAdd = (contador) => {
+        addItem(producto, contador)
     }
 
     return (
         <div className="row g-0 ">
             <div className="col-md-4">
-                <img src={`../img/${producto.img}`} alt="" className="img-fluid rounded-start" />
+                <img src={producto.img} alt="" className="img-fluid rounded-start" />
             </div>
             <div className="col-md-8 my-1" >
                 <div className="card-body">
