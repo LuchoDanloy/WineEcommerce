@@ -23,7 +23,7 @@ const ItemCuont = ({inicial, stock, onAdd}) => {
             <button className={`btn ${darkMode ? 'btn-dark' : 'btn-light'} mx-2`} onClick={() => sumar()} ><i className="fas fa-solid fa-plus fa-lg"></i></button>
             {contador}
             <button className={`btn ${darkMode ? 'btn-dark' : 'btn-light'} mx-2`} onClick={() => restar()} ><i className="fas fa-solid fa-minus fa-lg"></i></button>
-            <button className={`btn ${darkMode ? 'btn-primary' : 'btn-dark'}`} onClick={agregarAlCarrito} ><i class="fas fa-solid fa-cart-plus"></i> agregar al carrito</button>
+            <button className={`btn ${darkMode ? 'btn-primary' : 'btn-dark'}`} onClick={agregarAlCarrito} ><i className="fas fa-solid fa-cart-plus"></i> agregar al carrito</button>
             
         </div>
     );
