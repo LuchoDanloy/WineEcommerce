@@ -4,7 +4,6 @@ import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto} from ".
 import { useCarritoContext } from "../../context/CarritoContext";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
-import { hasSelectionSupport } from "@testing-library/user-event/dist/utils";
 
 const Checkout = () => {
     const {totalPrice, carrito, emptyCart} = useCarritoContext()
