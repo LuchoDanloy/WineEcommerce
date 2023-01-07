@@ -4,16 +4,19 @@ import { createOrdenCompra, getOrdenCompra, getProducto, updateProducto} from ".
 import { useCarritoContext } from "../../context/CarritoContext";
 import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
+import { hasSelectionSupport } from "@testing-library/user-event/dist/utils";
 
 const Checkout = () => {
     const {totalPrice, carrito, emptyCart} = useCarritoContext()
     const datosFormulario = React.useRef() //REFERENCIA
     let navigate = useNavigate()//ME DICE EN DONDE ESTOY EN ESTE MOMENTO
 
-    const {register, formState: {errors} , watch,handleSubmit} = useForm()
-
+    //USO DE useForm
+    const {register, formState: {errors} , watch, handleSubmit} = useForm()
 
     const consultarFormulario = (e) =>{
+        console.log("dentro de consultarFormulario")
+        console.log(e)
         //e: seria el evento es si
         e.preventDefault() //COMPORTAMIENTO POR DEFECTO
         const datoForm = new FormData(datosFormulario.current)
@@ -51,7 +54,6 @@ const Checkout = () => {
                 console.error(error)
             })
         })
-        
 
     }
     
@@ -61,13 +63,16 @@ const Checkout = () => {
     }
 
     //DESPUES DE VALIDAR TODO LLAMAMOS A consultarFormulario()
-    const onSubmit = (data) =>{
-        consultarFormulario()
+    const onSubmit = (data, e) =>{
+        console.log("dentro de onSubmit")
+        console.log(e)
+        consultarFormulario(e)
     }
 
     return (
         <div className="container my-4">
             <form onSubmit={handleSubmit(onSubmit)} ref={datosFormulario} >
+            {/* <form onSubmit={consultarFormulario} ref={datosFormulario}> */}
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label">Nombre y Apellido</label>
                     <input type="text" className="form-control border border-secondary" name="nombre" {...register('nombre', {
@@ -119,6 +124,7 @@ const Checkout = () => {
 
         </div>
     );
+
 }
 
 export default Checkout;
